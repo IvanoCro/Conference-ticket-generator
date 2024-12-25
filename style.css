@@ -30,7 +30,7 @@ body {
     url("assets/images/pattern-circle.svg") no-repeat,
     url("assets/images/pattern-squiggly-line-bottom.svg") no-repeat,
     linear-gradient(162deg, rgba(8,3,45,1) 64%, rgba(45,1,106,1) 100%);
-    background-size: auto, 100px, 100px, 400px ,cover;
+    background-size: auto, 300px, 300px, 600px ,cover;
     background-position: top center, top right, top -30px left, bottom left;
 }
 
@@ -42,6 +42,7 @@ body {
     text-align: left;
 }
 .main {
+    min-height: 100vh;
     color: #fff;
     text-align: center;
     display: flex;
