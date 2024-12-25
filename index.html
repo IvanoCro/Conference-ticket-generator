@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Ivano Zirdum | Conference ticket generator</title>
+
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <header class="main-header">
+        <img class="logo" src="assets/images/logo-full.svg" alt="Logo">
+      <h1 class="main-title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p class="side-text">Secure your spot at next year's biggest coding conference.</p>
+    </header>
+    <!-- Form starts -->
+     <section class="form-section">
+      <form action="">
+        <label for="avatar" class="avatar-label"><div class="avatar-label-div">
+          <img class="avatar-img" src="assets/images/icon-upload.svg" alt="Insert file icon">
+          <h4 class="avatar-text">Drag and drop or click to upload</h4>
+          <input type="file" id="avatar" class="avatar-input" accept="image/png, image/jpeg">
+        </div>
+      </label>
+      <div class="flex-div">
+        <img src="assets/images/icon-info.svg" alt="Info icon">
+        <p class="warning-text">Upload your photo (JPG or PNG, max size: 500KB).</p>
+      </div>
+        <label for="full-name" class="text-align-left margin-top-s">Full name</label>
+        <input type="text" id="full-name" class="input name-input">
+    
+        <label for="email" class="text-align-left">Email Adress</label>
+        <input type="email" id="email" placeholder="example@gmail.com" class="input email-input">
+    
+        <label for="github" class="text-align-left">Github Username</label>
+        <input type="text" id="github" placeholder="@yourusername" class="input github-input">
+      </form>
+      <button class="generate-btn btn" type="button">Generate My Ticket</button>
+    </section>
+  </main>
+   <!-- Form ends -->
+
+  <!-- Generated tickets starts -->
+  <main class="ticket-main">
+    <img class="logo" src="assets/images/logo-full.svg" alt="Logo">
+    <h2 class="results-text">Congrats, <span class="user-name-span" id="full-name-text"> Jonatan Kristof</span>! Your ticket is ready.</h2>
+    <h2 class="results-side-text">We've emailed your ticket to <span class="email-text"></span> and will send updates in the run up to the event.</h2>
+    <section class="ticket">
+      <div class="ticket-date-info">
+        <div class="logo-div">
+          <img class="logo" src="assets/images/logo-full.svg" alt="Logo"></div>
+        <div class="ticket-date-info-text">
+          <p>Jan 31, 2025 / Austin, TX</p>
+        </div>
+      </div>
+      <div class="ticket-user-info flex-div">
+        
+          <img class="user-image" src="assets/images/image-avatar.jpg" alt="User image">
+        
+        <div class="user-info">
+          <h3 class="user-name">Jonatan Kristof</h3>
+          <div class="github-img flex-div">
+            <img src="assets/images/icon-github.svg" alt="Github logo">
+            <h4 class="user-github">@jonatankristof0101</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Generated tickets ends -->
+                                      
+</body>
+</html>
